@@ -1,5 +1,4 @@
 @ echo off
-:: 获取管理员权限
 set _Args=%*
 if "%~1" NEQ "" (
   set _Args=%_Args:"=%
