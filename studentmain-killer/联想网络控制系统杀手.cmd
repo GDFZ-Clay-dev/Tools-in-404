@@ -10,6 +10,7 @@ fltmc 1>nul 2>nul || (
   del /f /q "%temp%\GetAdmin.vbs" 1>nul 2>nul
   exit
 )
+taskkill /IM samservice.exe /T /F
 taskkill /IM samproprocess.exe /T /F
 taskkill /IM LenRCClient.exe /T /F
 exit
